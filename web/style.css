@@ -1,0 +1,370 @@
+:root {
+    --color-bg: #fafafa;
+    --color-surface: #ffffff;
+    --color-text: #1a1a1a;
+    --color-muted: #5a5a5a;
+    --color-light: #888;
+    --color-accent: #2563eb;
+    --color-accent-light: #eff6ff;
+    --color-border: #e5e7eb;
+    --color-tag-bg: #f3f4f6;
+    --color-tag-primary-bg: #dbeafe;
+    --color-tag-primary-text: #1e40af;
+    --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", monospace;
+    --max-width: 860px;
+    --radius: 6px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.65;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 3rem 2rem 2rem;
+}
+
+/* Header */
+.header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--color-text);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius);
+    white-space: nowrap;
+    transition: all 0.15s ease;
+}
+
+.btn-download:hover {
+    background: var(--color-accent);
+    color: #fff;
+    text-decoration: none;
+}
+
+.tagline {
+    font-size: 1.05rem;
+    color: var(--color-muted);
+    margin: 0.35rem 0 1rem;
+}
+
+.contact {
+    font-size: 0.88rem;
+    color: var(--color-muted);
+}
+
+.sep {
+    margin: 0 0.4rem;
+    color: var(--color-border);
+}
+
+/* Sections */
+.section {
+    margin-bottom: 2.5rem;
+}
+
+.section > p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.section h2 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-light);
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* Jobs */
+.job {
+    margin-bottom: 2.25rem;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-bottom: 0.15rem;
+}
+
+.job-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.job-date {
+    font-size: 0.8rem;
+    color: var(--color-light);
+    font-family: var(--font-mono);
+    white-space: nowrap;
+    padding-top: 0.15rem;
+}
+
+.job-title {
+    font-size: 0.9rem;
+    color: var(--color-muted);
+    margin-bottom: 0.35rem;
+}
+
+.job-context {
+    font-size: 0.82rem;
+    color: var(--color-light);
+    font-family: var(--font-mono);
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.01em;
+}
+
+.job ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.job li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.35rem;
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+.job li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--color-light);
+}
+
+/* Sub-projects */
+.sub-project {
+    margin: 1.25rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--color-border);
+}
+
+.sub-project h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.15rem;
+}
+
+.project-link {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-left: 0.5rem;
+}
+
+/* OSS Card */
+.oss-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+}
+
+.oss-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.oss-card > p {
+    font-size: 0.9rem;
+    color: var(--color-muted);
+    margin-bottom: 0.75rem;
+}
+
+.oss-repos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.repo-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    padding: 0.3rem 0.7rem;
+    background: var(--color-tag-bg);
+    border-radius: var(--radius);
+}
+
+.stars {
+    font-size: 0.75rem;
+    color: var(--color-light);
+}
+
+.stars::before {
+    content: "\2605 ";
+}
+
+/* Skills */
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skill-category {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+}
+
+.skill-category h4 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-light);
+    min-width: 120px;
+    flex-shrink: 0;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.55rem;
+    background: var(--color-tag-bg);
+    border-radius: 4px;
+    color: var(--color-text);
+}
+
+.tag-primary {
+    background: var(--color-tag-primary-bg);
+    color: var(--color-tag-primary-text);
+    font-weight: 500;
+}
+
+/* Education */
+.edu .job-header {
+    margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border);
+    font-size: 0.78rem;
+    color: var(--color-light);
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-top {
+        flex-direction: column;
+    }
+
+    .job-header {
+        flex-direction: column;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sub-project {
+        padding-left: 0.75rem;
+    }
+}
+
+/* Print */
+@media print {
+    body {
+        font-size: 11px;
+        background: white;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .btn-download {
+        display: none;
+    }
+
+    .section {
+        page-break-inside: avoid;
+    }
+
+    .oss-card,
+    .skill-category {
+        border-color: #ccc;
+        box-shadow: none;
+    }
+
+    a {
+        color: var(--color-text);
+    }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manh Khieu Vu — Senior Software Engineer</title>
+    <meta name="description" content="Senior Software Engineer specializing in C/C++, Linux systems programming, distributed databases, and printer platform development.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-top">
+                <h1>Manh Khieu Vu</h1>
+                <a href="/VuManhKhieu.pdf" class="btn-download" title="Download PDF">Download CV</a>
+            </div>
+            <p class="tagline">Senior Software Engineer</p>
+            <nav class="contact">
+                <a href="https://www.linkedin.com/in/manh-khieu-vu" target="_blank" rel="noopener">LinkedIn</a>
+                <span class="sep">|</span>
+                <a href="https://github.com/khieuvm" target="_blank" rel="noopener">GitHub</a>
+                <span class="sep">|</span>
+                <a href="mailto:khieuvm.contactme@gmail.com">khieuvm.contactme@gmail.com</a>
+                <span class="sep">|</span>
+                <a href="tel:+84362698687">(+84) 362 698 687</a>
+                <span class="sep">|</span>
+                <span>Hanoi, Vietnam</span>
+            </nav>
+        </header>
+
+        <section class="section">
+            <h2>About</h2>
+            <p>Senior Software Engineer with 7+ years designing and shipping production C/C++ systems on Linux — spanning multi-source database engines, enterprise printer platforms, and real-time security software. I enjoy solving complex system-level problems where performance and reliability are non-negotiable, and have spent 6+ years collaborating directly with Japanese engineering teams across two companies. Growing toward Solution Architecture — looking for opportunities to broaden my design scope and take on challenges at the architecture level.</p>
+        </section>
+
+        <section class="section">
+            <h2>Experience</h2>
+
+            <article class="job">
+                <div class="job-header">
+                    <div>
+                        <h3>FPT Software</h3>
+                        <p class="job-title">Senior Software Engineer — Print Core Team</p>
+                    </div>
+                    <span class="job-date">Nov 2024 – Present</span>
+                </div>
+                <p class="job-context">KMI multi-function printer platform · C++ · Japanese enterprise clients</p>
+                <ul>
+                    <li>Develop core modules of the KMI printer platform in C++, supporting a wide range of printer models for Japanese enterprise clients</li>
+                    <li>Implement the print job pipeline: job reception, queue management, rasterization coordination, and hardware communication protocols</li>
+                    <li>Design device communication layers that translate high-level print commands into hardware-specific instruction sequences</li>
+                    <li>Extend platform capabilities for new printer models by implementing model-specific drivers and configuration handlers</li>
+                    <li>Analyze and resolve performance bottlenecks through profiling and targeted optimization of the print processing pipeline</li>
+                    <li>Collaborate directly with Japanese client teams on feature specifications, code reviews, and integration testing</li>
+                </ul>
+            </article>
+
+            <article class="job">
+                <div class="job-header">
+                    <div>
+                        <h3>TOSHIBA Software Development (Vietnam)</h3>
+                        <p class="job-title">Software Engineer</p>
+                    </div>
+                    <span class="job-date">Aug 2019 – Jul 2024</span>
+                </div>
+
+                <div class="sub-project">
+                    <h4>PGSpider — Distributed SQL Cluster Engine
+                        <a href="https://github.com/pgspider" target="_blank" rel="noopener" class="project-link">github.com/pgspider</a>
+                    </h4>
+                    <p class="job-context">PostgreSQL-based data virtualization engine · C · Open Source (180+ stars)</p>
+                    <ul>
+                        <li>Contributed to PGSpider, a high-performance SQL cluster engine enabling unified queries across heterogeneous data sources</li>
+                        <li>Developed Foreign Data Wrappers (FDW) for PostgreSQL, MySQL, SQLite, InfluxDB, GridDB, Oracle, and Amazon S3/Parquet</li>
+                        <li>Implemented query pushdown optimization — delegating WHERE, aggregations, ORDER BY, and GROUP BY to child nodes for distributed performance gains</li>
+                        <li>Built multi-tenant table virtualization allowing transparent schema consolidation across multiple backends</li>
+                        <li>Developed data type translation layers handling cross-system incompatibilities: mixed SQLite affinity, PostGIS geometry, and special value handling</li>
+                        <li>Implemented distributed INSERT/UPDATE/DELETE with batch optimization and round-robin node selection</li>
+                    </ul>
+                </div>
+
+                <div class="sub-project">
+                    <h4>Embedded Linux Multimedia Platform</h4>
+                    <p class="job-context">Consumer electronics · Qt · GStreamer · Wayland · DBus</p>
+                    <ul>
+                        <li>Built multimedia applications for embedded Linux using Qt for UI and system integration</li>
+                        <li>Developed media processing pipelines with GStreamer for audio/video capture, transcoding, and playback</li>
+                        <li>Implemented Wayland/Weston compositor integration for hardware-accelerated graphics rendering</li>
+                        <li>Designed inter-process communication architecture using DBus for multi-service coordination</li>
+                        <li>Optimized startup time and memory footprint for resource-constrained embedded targets</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="job">
+                <div class="job-header">
+                    <div>
+                        <h3>Bkav Corporation</h3>
+                        <p class="job-title">Software Engineer — Security & Malware Prevention</p>
+                    </div>
+                    <span class="job-date">Mar 2017 – Jul 2019</span>
+                </div>
+                <p class="job-context">Enterprise security products · C/C++ · Windows system-level</p>
+                <ul>
+                    <li>Developed components for enterprise security products using C/C++ for high-performance threat analysis</li>
+                    <li>Implemented real-time file scanning engine modules for malware detection with minimal system resource impact</li>
+                    <li>Built data processing pipelines for threat intelligence integration and signature database updates</li>
+                    <li>Worked on Windows system-level integration including service management and kernel-mode interfaces</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Languages</h4>
+                    <div class="skill-tags">
+                        <span class="tag tag-primary">C/C++ (7+ yrs)</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Golang</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">Java</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Systems & Platforms</h4>
+                    <div class="skill-tags">
+                        <span class="tag tag-primary">Linux System Programming</span>
+                        <span class="tag">Qt Framework</span>
+                        <span class="tag">GStreamer</span>
+                        <span class="tag">Wayland/Weston</span>
+                        <span class="tag">DBus</span>
+                        <span class="tag">Printer Platforms</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Database & Data</h4>
+                    <div class="skill-tags">
+                        <span class="tag tag-primary">PostgreSQL Internals</span>
+                        <span class="tag">FDW Development</span>
+                        <span class="tag">Query Optimization</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">InfluxDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>DevOps & Build</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">CMake</span>
+                        <span class="tag">Meson</span>
+                        <span class="tag">CI/CD</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>AI & Emerging</h4>
+                    <div class="skill-tags">
+                        <span class="tag">LLM Integration</span>
+                        <span class="tag">OpenAI APIs</span>
+                        <span class="tag">AI Agent Workflows</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <div class="edu">
+                <div class="job-header">
+                    <div>
+                        <h3>Hanoi University of Science and Technology</h3>
+                        <p class="job-title">Bachelor of Software Engineering — GPA: 3.1/4.0</p>
+                    </div>
+                    <span class="job-date">2015 – 2019</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Languages</h2>
+            <p>Vietnamese (Native) · English (Business Proficiency)</p>
+        </section>
+
+        <footer class="footer">
+            <p>Last updated: June 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "cv-khieuvm",
+  "version": "1.0.0",
+  "description": "CV management with CareerOS + web portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'",
+    "doctor": "node careeros/scripts/doctor.mjs --fix"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
