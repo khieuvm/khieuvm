@@ -41,55 +41,67 @@
 
             <article class="job">
                 <div class="job-header">
-                    <div>
-                        <h3>FPT Software</h3>
-                        <p class="job-title">Senior Software Engineer — Print Core Team</p>
+                    <h3>Senior Software Engineer — Print Core Team</h3>
+                    <div class="job-meta">
+                        <span class="job-company">FPT Software</span>
+                        <span class="job-date">Nov 2024 – Present</span>
                     </div>
-                    <span class="job-date">Nov 2024 – Present</span>
                 </div>
                 <p class="job-context">KMI multi-function printer platform · C++ · Japanese enterprise clients</p>
-                <ul>
-                    <li>Develop core modules of the KMI printer platform in C++, supporting a wide range of printer models for Japanese enterprise clients</li>
-                    <li>Implement the print job pipeline: job reception, queue management, rasterization coordination, and hardware communication protocols</li>
-                    <li>Design device communication layers that translate high-level print commands into hardware-specific instruction sequences</li>
-                    <li>Extend platform capabilities for new printer models by implementing model-specific drivers and configuration handlers</li>
-                    <li>Analyze and resolve performance bottlenecks through profiling and targeted optimization of the print processing pipeline</li>
-                    <li>Collaborate directly with Japanese client teams on feature specifications, code reviews, and integration testing</li>
-                </ul>
+
+                <div class="sub-project">
+                    <h4>Print Process Team</h4>
+                    <ul>
+                        <li>Develop and maintain print workflow modules within the KMI platform — handling job reception, scheduling, and communication with hardware for printing and finishing (stapler, sorter, group)</li>
+                        <li>Implement and adapt features across multiple printer models, ensuring compatibility across hardware configurations and product variants</li>
+                        <li>Optimize job processing time, resource utilization, and system responsiveness while new features and finisher integrations are continuously introduced</li>
+                        <li>Investigate and resolve complex system-level issues including concurrency problems, resource constraints, and cross-component interactions</li>
+                        <li>Collaborate with cross-functional teams (firmware, driver, API, GUI, validation, QA) to deliver features, evaluate cross-model impact, and maintain release quality</li>
+                    </ul>
+                </div>
+
+                <div class="sub-project">
+                    <h4>Market Issue Management</h4>
+                    <ul>
+                        <li>Manage end-user bug reports and investigation requests from the market — owning the full cycle from root cause analysis through solution, release, and closure</li>
+                        <li>Coordinate between internal modules and Japanese clients to communicate findings, assess impact, and align on corrective actions</li>
+                    </ul>
+                </div>
             </article>
 
             <article class="job">
                 <div class="job-header">
-                    <div>
-                        <h3>TOSHIBA Software Development (Vietnam)</h3>
-                        <p class="job-title">Software Engineer</p>
+                    <h3>Software Engineer</h3>
+                    <div class="job-meta">
+                        <span class="job-company">TOSHIBA Software Development (Vietnam)</span>
+                        <span class="job-date">Aug 2019 – Jul 2024</span>
                     </div>
-                    <span class="job-date">Aug 2019 – Jul 2024</span>
                 </div>
 
                 <div class="sub-project">
-                    <h4>PGSpider — Distributed SQL Cluster Engine
+                    <h4>PGSpider — Federated Query Engine
                         <a href="https://github.com/pgspider" target="_blank" rel="noopener" class="project-link">github.com/pgspider</a>
                     </h4>
-                    <p class="job-context">PostgreSQL-based data virtualization engine · C · Open Source (180+ stars)</p>
+                    <p class="job-context">PostgreSQL extension · C · Open Source (180+ stars)</p>
                     <ul>
-                        <li>Contributed to PGSpider, a high-performance SQL cluster engine enabling unified queries across heterogeneous data sources</li>
-                        <li>Developed Foreign Data Wrappers (FDW) for PostgreSQL, MySQL, SQLite, InfluxDB, GridDB, Oracle, and Amazon S3/Parquet</li>
-                        <li>Implemented query pushdown optimization — delegating WHERE, aggregations, ORDER BY, and GROUP BY to child nodes for distributed performance gains</li>
-                        <li>Built multi-tenant table virtualization allowing transparent schema consolidation across multiple backends</li>
-                        <li>Developed data type translation layers handling cross-system incompatibilities: mixed SQLite affinity, PostGIS geometry, and special value handling</li>
-                        <li>Implemented distributed INSERT/UPDATE/DELETE with batch optimization and round-robin node selection</li>
+                        <li>Collaborated directly with Japanese clients to receive, clarify, and analyze software feature requirements</li>
+                        <li>Took ownership of full-feature development — design, implementation, testing, and documentation — meeting strict delivery timelines</li>
+                        <li>Contributed to PGSpider, an open-source PostgreSQL extension for federated querying across multiple heterogeneous databases</li>
+                        <li>Implemented and maintained core features including Foreign Data Wrappers (FDW) and performance enhancements for distributed SQL execution</li>
+                        <li>Integrated multiple data sources (MySQL, Oracle, MongoDB, SQLite, InfluxDB, GridDB, S3/Parquet) via FDWs, ensuring compatibility and performance</li>
+                        <li>Implemented query pushdown optimization — delegating WHERE, aggregations, ORDER BY, and GROUP BY to child nodes</li>
                     </ul>
                 </div>
 
                 <div class="sub-project">
                     <h4>Embedded Linux Multimedia Platform</h4>
-                    <p class="job-context">Consumer electronics · Qt · GStreamer · Wayland · DBus</p>
+                    <p class="job-context">Toradex Apalis iMX · Qt · GStreamer · Wayland · DBus</p>
                     <ul>
-                        <li>Built multimedia applications for embedded Linux using Qt for UI and system integration</li>
-                        <li>Developed media processing pipelines with GStreamer for audio/video capture, transcoding, and playback</li>
+                        <li>Developed a multi-process multimedia system on Toradex Apalis iMX to display video, images, and text on embedded Linux</li>
+                        <li>Scaled output from Full HD to 4K resolution and from 30 fps to 60 fps through rendering and pipeline optimization</li>
+                        <li>Built media processing pipelines with GStreamer for video capture, transcoding, and playback</li>
                         <li>Implemented Wayland/Weston compositor integration for hardware-accelerated graphics rendering</li>
-                        <li>Designed inter-process communication architecture using DBus for multi-service coordination</li>
+                        <li>Designed inter-process communication architecture using DBus for coordinating multiple system services</li>
                         <li>Optimized startup time and memory footprint for resource-constrained embedded targets</li>
                     </ul>
                 </div>
@@ -97,18 +109,20 @@
 
             <article class="job">
                 <div class="job-header">
-                    <div>
-                        <h3>Bkav Corporation</h3>
-                        <p class="job-title">Software Engineer — Security & Malware Prevention</p>
+                    <h3>Software Engineer — Security & Malware Prevention</h3>
+                    <div class="job-meta">
+                        <span class="job-company">Bkav Corporation</span>
+                        <span class="job-date">Mar 2017 – Jul 2019</span>
                     </div>
-                    <span class="job-date">Mar 2017 – Jul 2019</span>
                 </div>
-                <p class="job-context">Enterprise security products · C/C++ · Windows system-level</p>
+                <p class="job-context">Bkav Pro · C/C++, Python, Assembly · Windows & Linux</p>
                 <ul>
-                    <li>Developed components for enterprise security products using C/C++ for high-performance threat analysis</li>
-                    <li>Implemented real-time file scanning engine modules for malware detection with minimal system resource impact</li>
-                    <li>Built data processing pipelines for threat intelligence integration and signature database updates</li>
-                    <li>Worked on Windows system-level integration including service management and kernel-mode interfaces</li>
+                    <li>Researched and developed malware prevention systems, contributing to Bkav Pro product</li>
+                    <li>Performed malware and behavioral analysis — reverse engineering malicious binaries using IDA Pro</li>
+                    <li>Built and maintained custom sandbox environments to safely execute and monitor suspicious samples</li>
+                    <li>Wrote tools and scripts in C/C++, Python, and Assembly for security products and test processes</li>
+                    <li>Integrated detection modules into Bkav's security products across Windows and Linux platforms</li>
+                    <li>Provided technical documentation and analysis reports used for product updates and internal R&D</li>
                 </ul>
             </article>
         </section>
@@ -170,14 +184,19 @@
         </section>
 
         <section class="section">
+            <h2>Projects</h2>
+            <p>Side projects and experiments available on <a href="https://github.com/khieuvm" target="_blank" rel="noopener">github.com/khieuvm</a></p>
+        </section>
+
+        <section class="section">
             <h2>Education</h2>
             <div class="edu">
                 <div class="job-header">
-                    <div>
-                        <h3>Hanoi University of Science and Technology</h3>
-                        <p class="job-title">Bachelor of Software Engineering — GPA: 3.1/4.0</p>
+                    <h3>Hanoi University of Science and Technology</h3>
+                    <div class="job-meta">
+                        <span class="job-company">Bachelor of Software Engineering — GPA: 3.1/4.0</span>
+                        <span class="job-date">2015 – 2019</span>
                     </div>
-                    <span class="job-date">2015 – 2019</span>
                 </div>
             </div>
         </section>
