@@ -12,7 +12,7 @@
     --color-tag-primary-text: #1e40af;
     --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-mono: "JetBrains Mono", "Fira Code", monospace;
-    --max-width: 860px;
+    --max-width: 960px;
     --radius: 6px;
 }
 
@@ -48,9 +48,8 @@ a:hover {
 
 /* Header */
 .header {
-    margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--color-text);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .header-top {
@@ -128,31 +127,21 @@ a:hover {
 }
 
 .job-header {
-    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.15rem;
 }
 
 .job-header h3 {
     font-size: 1.1rem;
     font-weight: 600;
-    margin-bottom: 0.1rem;
-}
-
-.job-meta {
-    display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
-    flex-wrap: wrap;
 }
 
 .job-company {
     font-size: 0.9rem;
     color: var(--color-muted);
-}
-
-.job-company::after {
-    content: "·";
-    margin-left: 0.5rem;
-    color: var(--color-light);
+    margin-bottom: 0.25rem;
 }
 
 .job-date {
@@ -356,8 +345,9 @@ a:hover {
 /* Print */
 @media print {
     body {
-        font-size: 11px;
+        font-size: 9.5px;
         background: white;
+        line-height: 1.4;
     }
 
     .container {
@@ -369,8 +359,39 @@ a:hover {
         display: none;
     }
 
+    .header {
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.5rem;
+    }
+
     .section {
-        page-break-inside: avoid;
+        margin-bottom: 1rem;
+    }
+
+    .section h2 {
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.2rem;
+    }
+
+    .job {
+        margin-bottom: 1rem;
+    }
+
+    .job li {
+        margin-bottom: 0.15rem;
+    }
+
+    .sub-project {
+        margin: 0.5rem 0;
+    }
+
+    .skill-category {
+        padding: 0.25rem 0;
+    }
+
+    .footer {
+        margin-top: 1rem;
+        padding-top: 0.5rem;
     }
 
     .oss-card,
@@ -380,6 +401,6 @@ a:hover {
     }
 
     a {
-        color: var(--color-text);
+        color: var(--color-accent);
     }
 }

@@ -1,7 +1,7 @@
 # CV Project — CLAUDE.md
 
 ## Overview
-Personal CV management project using **CareerOS** (agent-native CV builder) with a static web portfolio deployed on Netlify.
+Personal CV management project using **CareerOS** (agent-native CV builder) with a static web portfolio deployed on GitHub Pages.
 
 ## Project Structure
 ```
@@ -15,12 +15,10 @@ Personal CV management project using **CareerOS** (agent-native CV builder) with
 │   ├── modes/          # Agent playbooks
 │   ├── scripts/        # Tooling (Node.js)
 │   └── templates/      # LaTeX templates
-├── web/                # Static web CV (for Netlify)
-├── VuManhKhieu.docx    # Legacy CV (reference only)
-├── VuManhKhieu.pdf     # Legacy CV (reference only)
+├── web/                # Static web CV (GitHub Pages)
+├── .github/workflows/  # GitHub Actions (Pages deploy)
 ├── CLAUDE.md           # This file
 ├── package.json        # Root project config
-├── netlify.toml        # Netlify deployment config
 └── .gitignore
 ```
 
@@ -40,16 +38,19 @@ All commands run from `/Volumes/Data/CV/careeros/`:
 - **Not**: Embedded-only — focus is application-level systems software
 
 ## Web CV
-- Static HTML/CSS page deployed on Netlify
+- Static HTML/CSS page deployed on GitHub Pages
 - English only
-- Domain: `*.netlify.app`
+- URL: `khieuvm.github.io/khieuvm`
 - Content sourced from `careeros/data/cv.master.md`
+
+## Rules
+- **NEVER `git push` without explicit user confirmation.** Always wait for the user to say "push" or equivalent before pushing to any remote. This applies to all branches.
 
 ## Workflow
 1. Update CV content → edit `careeros/data/cv.master.md`
 2. Tailor for specific job → `/cos build-cv <job>`
 3. Update web version → regenerate from master CV
-4. Deploy → push to GitHub, Netlify auto-deploys
+4. Deploy → wait for user to confirm, then push to GitHub (Pages auto-deploys via Actions)
 
 ## Dependencies
 - Node.js 20+

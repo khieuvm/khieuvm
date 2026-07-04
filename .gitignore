@@ -12,8 +12,8 @@ data/
 
 # Build output
 dist/
-.netlify/
 
 # PDF/DOCX source (managed separately)
 *.docx
 *.pdf
+!web/VuManhKhieu.pdf
