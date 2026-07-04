@@ -6,6 +6,7 @@ node_modules/
 
 # CareerOS user data (private)
 data/
+careeros/
 
 # Config with secrets
 .careeros.config.json
@@ -16,4 +17,4 @@ dist/
 # PDF/DOCX source (managed separately)
 *.docx
 *.pdf
-!web/VuManhKhieu.pdf
+!docs/VuManhKhieu.pdf

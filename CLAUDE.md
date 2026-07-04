@@ -15,8 +15,7 @@ Personal CV management project using **CareerOS** (agent-native CV builder) with
 │   ├── modes/          # Agent playbooks
 │   ├── scripts/        # Tooling (Node.js)
 │   └── templates/      # LaTeX templates
-├── web/                # Static web CV (GitHub Pages)
-├── .github/workflows/  # GitHub Actions (Pages deploy)
+├── docs/               # Static web CV (GitHub Pages, served from /docs)
 ├── CLAUDE.md           # This file
 ├── package.json        # Root project config
 └── .gitignore
@@ -50,7 +49,7 @@ All commands run from `/Volumes/Data/CV/careeros/`:
 1. Update CV content → edit `careeros/data/cv.master.md`
 2. Tailor for specific job → `/cos build-cv <job>`
 3. Update web version → regenerate from master CV
-4. Deploy → wait for user to confirm, then push to GitHub (Pages auto-deploys via Actions)
+4. Deploy → wait for user to confirm, then push to GitHub (Pages auto-deploys from /docs)
 
 ## Dependencies
 - Node.js 20+

@@ -4,7 +4,7 @@ import path from 'path';
 
 const url = process.argv[2] || 'http://localhost:3456/';
 const outDir = path.dirname(fileURLToPath(import.meta.url));
-const outPath = path.join(outDir, 'web', 'VuManhKhieu.pdf');
+const outPath = path.join(outDir, 'docs', 'VuManhKhieu.pdf');
 
 const browser = await puppeteer.launch({ headless: true });
 const page = await browser.newPage();
