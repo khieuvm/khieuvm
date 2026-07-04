@@ -17,4 +17,4 @@ dist/
 # PDF/DOCX source (managed separately)
 *.docx
 *.pdf
-!docs/VuManhKhieu.pdf
+!docs/ManhKhieuVu.pdf
